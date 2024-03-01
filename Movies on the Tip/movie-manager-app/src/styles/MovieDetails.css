@@ -1,0 +1,49 @@
+.try {
+    background-color: rgb(123, 1, 1);
+    width: 80%;
+    height: 70vh;
+    margin-top: 20px;
+    border: 2px solid yellow;
+}
+
+.card {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.poster {
+    float: left;
+    margin-right: 20px;
+}
+
+.poster img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+.poster img:hover {
+    transform: scale(1.1);
+}
+.details {
+    overflow: hidden;
+    padding: 20px;
+}
+.details h2 {
+    margin-top: 0;
+    color: #333;
+}
+.details p {
+    margin: 5px 0;
+    color: #666;
+}
+
+#movieDetailsImage {
+    position: relative;
+    background-image: url('../../images/image_not_found.jpg');
+    background-size: cover;
+    background-position: center;
+    mask-repeat: no-repeat;
+}

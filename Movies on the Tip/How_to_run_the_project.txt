@@ -1,0 +1,21 @@
+Steps to run the project:
+
+**Movies on the Tip has two folders: 
+
+    1) movie-manager-app: 
+
+            Open a terminal in this folder
+            Execute commands:
+
+                i) npm install
+                ii) npm start
+    
+    2) Server: 
+
+            Open another terminal in this folder
+            Execute command: 
+
+		npm start
+
+ **Internet connectivity is needed
+            

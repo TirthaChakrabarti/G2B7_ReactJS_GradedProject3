@@ -1,0 +1,7 @@
+#movieListItemImage {
+    position: relative;
+    background-image: url('../../images/image_not_found.jpg');
+    background-size: cover;
+    background-position: center;
+    mask-repeat: no-repeat;
+}

@@ -1,0 +1,139 @@
+#category-overlay {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+}
+
+#category-body {
+    position: fixed;
+    align-items: center;
+}
+
+#category-list {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(100, 2, 2);
+    gap: 15px;
+    padding: 15px;
+}
+
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), #ff1a63);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    transition: height 0.7s;
+  }
+
+  .list-item {
+    position: relative;
+    width: 250px;
+    height: 300px;
+    border: 1px solid red;
+    border-radius: 10px;
+}
+
+#list-item-1 {
+    background: url('../../images/coming_soon_2.jpg');
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+#list-item-2 {
+    background: url('../../images/ongoing.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#list-item-3 {
+    background: url('../../images/top_rated_Indian.webp');
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+#list-item-4 {
+    background: url('../../images/top_rated.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+  
+  .layer h2{
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  .list-item-1:hover {
+    transform: scale(1.1);
+  }
+  
+  .list-item:hover .layer{
+    height: 100%;
+  }
+
+@media screen and (max-width: 1100px) {
+    #category-list {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(100, 2, 2);
+        gap: 8px;
+        padding: 8px;
+        margin-top: 50px;
+        border-radius: 10px;
+    }
+
+    .list-item {
+        position: relative;
+        width: 250px;
+        height: 80px;
+        border: 1px solid red;
+        border-radius: 10px;
+    }   
+
+    .layer{
+        width: 100%;
+        height: 0;
+        background: linear-gradient(rgba(0, 0, 0, 0.8), #ff1a63);
+        border-radius: 10px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 40px;
+        text-align: center;
+        font-size: 10px;
+        color: white;
+        transition: height 0.7s;
+      }
+
+      .layer h2{
+        font-weight: 200;
+        margin-bottom: 5px;
+      }
+}
